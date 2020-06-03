@@ -1,10 +1,10 @@
-package com.springboot.CRUDdemo.dao;
+package com.springboot.CRUDdemo.service;
 
 import java.util.List;
 
 import com.springboot.CRUDdemo.entity.Student;
 
-public interface StudentDAO {
+public interface StudentService {
 
 	public List<Student> findAll();
 	
@@ -13,5 +13,4 @@ public interface StudentDAO {
 	public void save(Student theStudent);
 	
 	public void deleteById(int theId);
-	
 }

@@ -9,23 +9,26 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.springboot.CRUDdemo.dao.StudentDAO;
 import com.springboot.CRUDdemo.entity.Student;
+import com.springboot.CRUDdemo.service.StudentService;
 
 @RestController
 @RequestMapping("/api")
 public class StudentRestController {
 	
-	private StudentDAO studentDAO;
+	private StudentService studentService;
 	
 	// quick inject of student DAO (constructor injection)
 	@Autowired
-	public StudentRestController(StudentDAO theStudentDAO) {
-		studentDAO = theStudentDAO;
+	public StudentRestController(StudentService theStudentService) {
+		studentService = theStudentService;
 	}
 	
 	// expose "/student" and return list of employees
 	@GetMapping("/students")
 	public List<Student> findAll(){
-		return studentDAO.findAll();
+		return studentService.findAll();
 	}
+	
+	
 
 }
