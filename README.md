@@ -6,11 +6,12 @@ This small Project resume REST CRUD Api with Hibernate using Spring Boot
   
 To adapt it to your need, change the Data spring properties in application.properties.
 
-<p>Spring Boot is self-contained, no need to install anything.
-  -For Windows powershell use:
-    ./mvnw package
-    cd target
-    java -jar #name of the jar
+<p>
+  <br>Spring Boot is self-contained, no need to install anything.
+  <br>-For Windows powershell use:
+  <br> ./mvnw package
+  <br> cd target
+  <br> java -jar #name of the jar
 </p>
     
   -Or use ./mvnw spring-boot:run #to run it
